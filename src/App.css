@@ -1,4 +1,6 @@
 #root {
+  background: linear-gradient(to bottom, #003366 0%, #66ccff 100%);
+
   width: 100%;
   min-height: 100vh;
 }

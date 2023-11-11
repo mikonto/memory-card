@@ -2,6 +2,11 @@
   height: 250px;
   background-color: lightblue;
   border-radius: 20px;
+  transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+}
+
+.card:hover {
+  box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.5); /* White blurry border on hover */
 }
 
 .card img {
