@@ -1,0 +1,14 @@
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 15px;
+  justify-content: center;
+  padding: 15px;
+  background-color: blue;
+}
+
+@media (min-width: 1461px) {
+  .card-grid {
+    grid-template-columns: repeat(6, minmax(230px, 1fr));
+  }
+}
