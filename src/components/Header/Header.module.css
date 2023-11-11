@@ -5,14 +5,44 @@
   background-color: transparent;
   height: 70px;
   padding: 15px;
-  line-height: 0.1;
   margin-bottom: 10px;
 }
 
 .title {
   line-height: 0.3;
+  word-break: break-word;
 }
 
 .paragraph {
   margin: 0;
+  line-height: 0.3;
+}
+
+/* Media query for viewport width of 750px or less */
+@media (max-width: 750px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .header > div {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .title,
+  .paragraph {
+    width: 100%;
+  }
+
+  .title {
+    line-height: 1;
+  }
+
+  .paragraph {
+    line-height: 1.4;
+  }
 }
